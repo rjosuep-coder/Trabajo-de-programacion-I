@@ -10,6 +10,10 @@ public class Aplicacion {
                  
                   playList = ap.agregarContenido();
                   inicioPlay = System.nanoTime();
+
+                  finPlay = System.nanoTime();
+                  tiempoTotal = finPlay - inicioPlay;
+                  ap.mostrarResultados(playLis, tiempoTotal);
          }
          
      public ArrayList<Multimedia> agregarContenido(){
