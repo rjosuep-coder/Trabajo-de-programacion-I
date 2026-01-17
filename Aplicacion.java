@@ -5,7 +5,7 @@ public class Aplicacion {
          public static void main( String arg[]){
                   Aplicacion ap;
                   ap = new Aplicacion();
-                  ArrayList<Multimedia> playList;
+                  ArrayList<contMulti> playList;
 
                  
                   playList = ap.agregarContenido();
@@ -16,8 +16,8 @@ public class Aplicacion {
                   ap.mostrarResultados(playLis, tiempoTotal);
          }
          
-     public ArrayList<Multimedia> agregarContenido(){
-        ArrayList<Multimedia> arr;
+     public ArrayList<contMulti> agregarContenido(){
+        ArrayList<contMulti> arr;
         return arrs; 
     }    
 }
