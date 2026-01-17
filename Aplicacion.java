@@ -22,8 +22,8 @@ public class Aplicacion {
     }    
      public mostrarResultados(ArrayList<contMulti> playList, double inicioPlay, double finPlay,double tiempoTotal){
 
-              System.out.println("tiempo inicial de la cancion: "+ inicioPlay);
-              System.out.println("tiempo final de la cancion: "+ finPlay);
-              System.out.println("El tiempo total es: "+ tiempoTotal);
+              System.out.println("tiempo inicial de la PlayList: "+ inicioPlay);
+              System.out.println("tiempo final de la PlayList: "+ finPlay);
+              System.out.println("Duracion de la PlayList: "+ tiempoTotal);
      }         
 }
