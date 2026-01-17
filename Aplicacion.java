@@ -7,9 +7,9 @@ public class Aplicacion {
                   ap = new Aplicacion();
                   ArrayList<Multimedia> playList;
 
-                  
+                 
                   playList = ap.agregarContenido();
-               
+                  inicioPlay = System.nanoTime();
          }
          
      public ArrayList<Multimedia> agregarContenido(){
