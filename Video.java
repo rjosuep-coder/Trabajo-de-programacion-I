@@ -13,7 +13,7 @@
         public void mostrarDetalles() {
             System.out.println("[VIDEO] " + getTitulo() + " | Calidad: " + resolucion + " | " + getDuracion() + "s");
         }
-         public  Video pedirDatos() {
+         public  Video pedirDatosV() {
         String titulo,resolucion;
         double duracion;
         Scanner tex;
@@ -36,5 +36,6 @@
     }
 }
  
+
 
 
