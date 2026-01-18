@@ -1,5 +1,5 @@
     public class Video extends ContMulti {
-        private String resolucion;
+         String resolucion;
 
         public Video(String titulo, int duracion, String resolucion) {
             super(titulo, duracion);
@@ -36,6 +36,7 @@
         }
 }
  
+
 
 
 
