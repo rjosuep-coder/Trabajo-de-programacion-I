@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public abstratc class ContMulti implements Reproducible {
     String titulo;
-    double duracion;
+    int duracion;
 
     public void setTitulo(String titulo) {
         this.titulo = titulo;
@@ -45,6 +45,7 @@ public abstratc class ContMulti implements Reproducible {
         return valor;
     }
 }
+
 
 
 
