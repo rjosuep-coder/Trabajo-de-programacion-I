@@ -11,7 +11,7 @@
          }
 
         public void mostrarDetalles() {
-            System.out.println("[VIDEO] " + getTitulo() + " | Calidad: " + resolucion + " | " + getDuracion() + "s");
+            System.out.println("[VIDEO] " + getTitulo()+ " | "+ resolucion + " | " + getDuracion() + "s");
         }
         @Override
         public  void  pedirDatos() {
@@ -30,7 +30,7 @@
         public void reproducir() {
         System.out.println("Reproduciendo video: "
                 + titulo
-                + " [" + resolucion + " - " + calidad + "]");
+                + " [" + resolucion+ "]");
         }
 
          @Override
@@ -42,6 +42,7 @@
         }
 }
  
+
 
 
 
