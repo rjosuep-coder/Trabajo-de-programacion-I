@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public abstratc class ContMulti implements Reproducible {
     String titulo;
     double duracion;
@@ -43,6 +45,7 @@ public abstratc class ContMulti implements Reproducible {
         return valor;
     }
 }
+
 
 
 
