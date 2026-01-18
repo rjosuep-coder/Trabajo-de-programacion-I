@@ -1,12 +1,12 @@
 public class ContMulti implements Reproducible {
     String titulo;
-    int duracion;
+    double duracion;
 
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
 
-    public void setDuracion(int duracion) {
+    public void setDuracion(double duracion) {
         this.duracion = duracion;
     }
 
@@ -14,14 +14,15 @@ public class ContMulti implements Reproducible {
         return titulo;
     }
 
-    public int getDuracion() {
+    public double getDuracion() {
         return duracion;
     }
     
-    public ContMulti(String titulo, int duracion) {
+    public ContMulti(String titulo, double duracion) {
         this.titulo = titulo;
         this.duracion = duracion;
     }
 }
+
 
 
