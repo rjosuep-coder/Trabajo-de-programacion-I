@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Cancion extends ContMulti {
     private String artista;
 
-    public Cancion(String titulo, int duracion, String artista) {
+    public Cancion(String titulo, double duracion, String artista) {
         super(titulo, duracion);
         this.artista = artista;
     }
@@ -38,6 +38,7 @@ public class Cancion extends ContMulti {
 }
  
     
+
 
 
 
