@@ -16,16 +16,17 @@ public class Podcast extends ContMulti{
 
     @Override
     public void pedirDatos() {
-        Scanner sc = new Scanner(System.in);
+        String t;
+        int d,e;
+                   
+        t = pedirTexto("Titulo del Podcast: ");
+        setTitulo(t);
+        
+        e = pedirValor("Numero de episodio: ");
+        episodio = e;
 
-        System.out.print("Titulo del podcast: ");
-        setTitulo(sc.nextLine());
-
-        System.out.print("Numero de episodio: ");
-        numeroEpisodio = sc.nextInt();
-
-        System.out.print("Duracion (segundos): ");
-        setDuracion(sc.nextInt());
+        d = pedirValor("Duracion en segundos: ");
+        setDuracion(d);
     }
 
     @Override
@@ -33,7 +34,7 @@ public class Podcast extends ContMulti{
         System.out.println("Reproduciendo podcast: "
                 + titulo
                 + " | Episodio "
-                + numeroEpisodio);
+                + episodio);
     }
 
     @Override
@@ -45,4 +46,5 @@ public class Podcast extends ContMulti{
     }
         
 }
+
 
