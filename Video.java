@@ -10,7 +10,7 @@
         public  void  pedirDatos() {
           String t,r;
            int d; 
-             t = pedirTexto("Titulo de la cancion: ");
+             t = pedirTexto("Titulo del video: ");
                 setTitulo(t);
 
              r = pedirTexto("Resolucion: ");
@@ -36,6 +36,7 @@
         }
 }
  
+
 
 
 
