@@ -18,9 +18,10 @@ public class ContMulti implements Reproducible {
         return duracion;
     }
     
-    public ContMulti(String titulo, int duracionSegundos) {
+    public ContMulti(String titulo, int duracion) {
         this.titulo = titulo;
         this.duracion = duracion;
     }
 }
+
 
