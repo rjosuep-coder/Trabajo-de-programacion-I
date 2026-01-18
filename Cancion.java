@@ -24,7 +24,7 @@ public class Cancion extends ContMulti {
         t = pedirTexto("Titulo de la cancion: ");
         setTitulo(t);
 
-        a = pedirTexto("Titulo de la cancion: ");
+        a = pedirTexto("Nombre del artista: ");
         artista = a;
 
         d = pedirValor("Duracion en segundos: ");
@@ -43,6 +43,7 @@ public class Cancion extends ContMulti {
 }
  
     
+
 
 
 
