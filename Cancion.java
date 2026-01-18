@@ -14,30 +14,39 @@ public class Cancion extends ContMulti {
     public void mostrarDetalles() {
         System.out.println("[CANCION] " + getTitulo() + " | Artista: " + artista + " | " + getDuracion() + "s");
     }
-    public  Cancion pedirDatosC() {
-        String titulo,artista;
-        double duracion;
-        Scanner tex;
-        Cancion c;
-        tex= new Scanner(System.in);
+
+    @Override
+    public void pedirDatos() {
+        String t,a;
+        int d;
+        Scanner sc = new Scanner(System.in);
         
-        System.out.print("Introduce el título: ");
-         titulo = sc.nextLine();
+        t = pedirTexto("Titulo de la cancion: ");
+        setTitulo(t);
 
-        System.out.print("Introduce el artista: ");
-         artista = sc.nextLine();
+        a = pedirTexto("Titulo de la cancion: ");
+        artista = a;
 
-        System.out.print("Introduce la duración (segundos): ");
-         duracion = sc.nextDouble();
+        d = pedirValor("Duracion en segundos: ");
+        setDuracion(d);
+    }
     
-        //Limpiar el buffer después de leer números
-        sc.nextLine(); 
-         c = new Cancion(titulo, duracion, artista);
-        return c;
+    @Override
+    public void reproducir() {
+        System.out.println("Reproduciendo: " + titulo + " - " + artista);
+    }
+
+    @Override
+    public void mostrar() {
+        System.out.println("[CANCION] "
+                + titulo
+                + " | Artista: " + artista
+                + " | " + duracion + "s");
     }
 }
  
     
+
 
 
 
