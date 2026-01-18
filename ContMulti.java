@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public abstratc class ContMulti implements Reproducible {
+public abstract class ContMulti implements Reproducible {
     String titulo;
     int duracion;
 
@@ -45,6 +45,7 @@ public abstratc class ContMulti implements Reproducible {
         return valor;
     }
 }
+
 
 
 
