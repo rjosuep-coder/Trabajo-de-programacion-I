@@ -6,7 +6,7 @@ public class Cancion extends ContMulti {
         super(titulo, duracion);
         this.artista = artista;
     }
-
+    @Override
     public void reproducir() {
         System.out.println("Reproduciendo: " + getTitulo() + " - " + artista);
     }
@@ -43,6 +43,7 @@ public class Cancion extends ContMulti {
 }
  
     
+
 
 
 
