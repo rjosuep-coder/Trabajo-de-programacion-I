@@ -20,7 +20,7 @@ public class Aplicacion {
     tec = new Scanner(System.in);
     String opcion;
     
-    System.out.println("¿Qué deseas agregar? (cancion / podcast / video)");
+    System.out.println("¿Desea agregar un nuevo contenido? (cancion / podcast / video)");
     opcion = tec.nextLine().toLowerCase();
 
     ContMulti contenido = null;
