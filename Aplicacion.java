@@ -5,20 +5,23 @@ public class Aplicacion {
          public static void main( String arg[]){
                   Aplicacion ap;
                   ap = new Aplicacion();
-                  
+                  int total;
                   ArrayList<ContMulti> playList;
                   playList = new ArrayList<ContMulti>();
                   
                   ap.agregar(playList);
-                  
+                  total = ap.duracionTotal(playList, 0);
+                  ap.mostrarPlaylist(playList);
+                 ap.mostrar(total, "Duracion de la playList: ");
          }
          
     public void pedirContenido(ArrayList<ContMulti> playList) {
-    Scanner sc = new Scanner(System.in);
+    Scanner tec;
+    tec = new Scanner(System.in);
     String opcion;
-
+    
     System.out.println("¿Qué deseas agregar? (cancion / podcast / video)");
-    opcion = sc.nextLine().toLowerCase();
+    opcion = tec.nextLine().toLowerCase();
 
     ContMulti contenido = null;
 
@@ -50,10 +53,6 @@ public class Aplicacion {
         pedirContenido(playList);
     } while (confirmarContenido());
 
-    System.out.println("\nPlaylist creada:");
-    for (ContMulti c : playList) {
-        c.mostrar();
-    }
     }
     
     public boolean confirmarContenido() {
@@ -65,5 +64,26 @@ public class Aplicacion {
 
     return op.equals("si");
 }
+    
+    public int duracionTotal(ArrayList<ContMulti> playList, int i) {
+
+    if (i == playList.size()) {
+        return 0;
+    }
+
+    return playList.get(i).getDuracion() 
+           + duracionTotal(playList, i + 1);
+}
+    public void mostrarPlaylist(ArrayList<ContMulti> playList) {
+    System.out.println("Playlist:");
+    for (ContMulti c : playList) {
+        c.mostrar();
+    }
+}
+    
+    public void mostrar(int a, String tex){
+        System.out.println(tex + a);
+    }
+    
 }
 
