@@ -1,6 +1,7 @@
 import java.util.Scanner;
 import java.util.ArrayList;
-
+import java.util.Collections;
+import java.util.Comparador;
 public class Aplicacion {
          public static void main( String arg[]){
                   Aplicacion ap;
@@ -12,7 +13,9 @@ public class Aplicacion {
                   ap.agregar(playList);
                   total = ap.duracionTotal(playList, 0);
                   ap.mostrarPlaylist(playList);
-                 ap.mostrar(total, "Duracion de la playList: ");
+                  ap.mostrar(total, "Duracion de la playList: ");
+                  ap.ordenarPlaylist(playList);
+                  ap.mostrarPlaylist(playList);
          }
          
    public void pedirContenido(ArrayList<ContMulti> playList) {
@@ -20,7 +23,7 @@ public class Aplicacion {
     tec = new Scanner(System.in);
     String opcion;
     
-    System.out.println("¿Desea agregar un nuevo contenido? (cancion / podcast / video)");
+    System.out.println("¿Que contenido deseas agregar? (cancion / podcast / video)");
     opcion = tec.nextLine().toLowerCase();
 
     ContMulti contenido = null;
@@ -83,7 +86,32 @@ public class Aplicacion {
     public void mostrar(int a, String tex){
         System.out.println(tex + a);
     }
-         
-    
+    public void ordenarPlaylist(ArrayList<ContMulti> playList) {
+    String op;
+     Scanner tec;
+     tec = new Scanner(System.in);
+      System.out.println("¿Como deseas ordenar la playlist?");
+      System.out.println("1. Alfabeticamente por titulo");
+      System.out.println("2. Por duracion");
+        System.out.println("Opcion(1/2)");
+       op =tec.nextLine();
+ 
+        switch (op) {
+           case "1":
+            ordenarPorTitulo(playList);
+            break;
+           case "2":
+            ordenarPorDuracion(playList);
+            break;
+           default:
+            System.out.println("Opción no valida");
+        }     
+    }
+    public void ordenarPorTitulo(ArrayList<ContMulti> playList) {
+      Collections.sort(playList, Comparator.comparing(ContMulti::getTitulo));
+    }
+    public void ordenarPorDuracion(ArrayList<ContMulti> playList) {
+       Collections.sort(playList, Comparator.comparingInt(ContMulti::getDuracion));
+    }     
 }
 
