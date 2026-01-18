@@ -14,7 +14,7 @@ public class Cancion extends ContMulti {
     public void mostrarDetalles() {
         System.out.println("[CANCION] " + getTitulo() + " | Artista: " + artista + " | " + getDuracion() + "s");
     }
-    public  Cancion pedirDatos() {
+    public  Cancion pedirDatosC() {
         String titulo,artista;
         double duracion;
         Scanner tex;
@@ -38,6 +38,7 @@ public class Cancion extends ContMulti {
 }
  
     
+
 
 
 
