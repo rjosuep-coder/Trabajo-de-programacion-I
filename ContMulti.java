@@ -1,4 +1,4 @@
-public class ContMulti {
+public class ContMulti implements Reproducible {
     String titulo;
     int duracion;
 
@@ -23,3 +23,4 @@ public class ContMulti {
         this.duracion = duracion;
     }
 }
+
