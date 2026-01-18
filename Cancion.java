@@ -31,10 +31,7 @@ public class Cancion extends ContMulti {
         setDuracion(d);
     }
     
-    @Override
-    public void reproducir() {
-        System.out.println("Reproduciendo: " + titulo + " - " + artista);
-    }
+
 
     @Override
     public void mostrar() {
@@ -46,6 +43,7 @@ public class Cancion extends ContMulti {
 }
  
     
+
 
 
 
