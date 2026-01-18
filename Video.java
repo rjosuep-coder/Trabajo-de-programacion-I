@@ -13,7 +13,7 @@
              t = pedirTexto("Titulo del video: ");
                 setTitulo(t);
 
-             r = pedirTexto("Resolucion: ");
+             r = pedirTexto("Resolucion (1080p/720p/480p) : ");
                 resolucion = r;
     
              d = pedirValor("Duracion en segundos: ");
@@ -36,6 +36,7 @@
         }
 }
  
+
 
 
 
