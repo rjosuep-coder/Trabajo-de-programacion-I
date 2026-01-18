@@ -34,5 +34,39 @@ public class Aplicacion {
              op = tec.nextLine().toLowerCase();
 
              return op.equals("si");
-     }    
+     }
+
+         public void pedirContenido(ArrayList<ContMulti> playList) {
+    Scanner sc = new Scanner(System.in);
+    String opcion;
+
+    System.out.println("¿Qué deseas agregar? (cancion / podcast / video)");
+    opcion = sc.nextLine().toLowerCase();
+
+    ContMulti contenido = null;
+
+    switch (opcion) {
+        case "cancion":
+            contenido = new Cancion("", 0, "");
+            break;
+
+        case "podcast":
+            contenido = new Podcast("", 0, 0);
+            break;
+
+        case "video":
+            contenido = new Video("", 0, "");
+            break;
+
+        default:
+            System.out.println("Opción no válida");
+            return;
+    }
+
+    // POLIMORFISMO MAGICO ✨
+    contenido.pedirDatos();
+    playList.add(contenido);
+
+    System.out.println("Contenido agregado a la playlist");
+}
 }
