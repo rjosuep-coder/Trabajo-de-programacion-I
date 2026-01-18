@@ -21,6 +21,7 @@
                 setTitulo(t);
 
                r = pedirTexto("Resolucion: ");
+                resolucion = r;
     
                d = pedirValor("Duracion en segundos: ");
                  setDuracion(d);
@@ -42,6 +43,7 @@
         }
 }
  
+
 
 
 
