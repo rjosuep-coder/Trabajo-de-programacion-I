@@ -8,7 +8,7 @@ public abstratc class ContMulti implements Reproducible {
         this.titulo = titulo;
     }
 
-    public void setDuracion(double duracion) {
+    public void setDuracion(int duracion) {
         this.duracion = duracion;
     }
 
@@ -16,11 +16,11 @@ public abstratc class ContMulti implements Reproducible {
         return titulo;
     }
 
-    public double getDuracion() {
+    public int getDuracion() {
         return duracion;
     }
     
-    public ContMulti(String titulo, double duracion) {
+    public ContMulti(String titulo, int duracion) {
         this.titulo = titulo;
         this.duracion = duracion;
     }
@@ -45,6 +45,7 @@ public abstratc class ContMulti implements Reproducible {
         return valor;
     }
 }
+
 
 
 
