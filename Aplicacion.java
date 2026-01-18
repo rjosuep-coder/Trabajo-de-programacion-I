@@ -25,5 +25,14 @@ public class Aplicacion {
               System.out.println("tiempo inicial de la PlayList: "+ inicioPlay);
               System.out.println("tiempo final de la PlayList: "+ finPlay);
               System.out.println("Duracion de la PlayList: "+ tiempoTotal);
-     }         
+     }
+
+     public boolean confirmarContenido() {
+             String op;
+
+             System.out.print("¿Desea agregar otro contenido? (si/no): ");
+             op = tec.nextLine().toLowerCase();
+
+             return op.equals("si");
+     }    
 }
