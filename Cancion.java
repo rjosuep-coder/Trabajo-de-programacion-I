@@ -22,10 +22,10 @@ public class Cancion extends ContMulti {
         tex= new Scanner(System.in);
         
         System.out.print("Introduce el título: ");
-        String titulo = sc.nextLine();
+         titulo = sc.nextLine();
 
         System.out.print("Introduce el artista: ");
-        String artista = sc.nextLine();
+         artista = sc.nextLine();
 
         System.out.print("Introduce la duración (segundos): ");
          duracion = sc.nextDouble();
@@ -38,5 +38,6 @@ public class Cancion extends ContMulti {
 }
  
     
+
 
 
