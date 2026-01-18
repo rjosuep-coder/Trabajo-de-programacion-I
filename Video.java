@@ -13,29 +13,36 @@
         public void mostrarDetalles() {
             System.out.println("[VIDEO] " + getTitulo() + " | Calidad: " + resolucion + " | " + getDuracion() + "s");
         }
-         public  Video pedirDatosV() {
-        String titulo,resolucion;
-        double duracion;
-        Scanner tex;
-        Video v;
-        tex= new Scanner(System.in);
-        
-        System.out.print("Introduce el título: ");
-         titulo = sc.nextLine();
+        @Override
+        public  void  pedirDatos() {
+          String t,r;
+           int d; 
+              t = pedirTexto("Titulo de la cancion: ");
+                setTitulo(t);
 
-        System.out.print("Introduce el artista: ");
-         resolucion = sc.nextLine();
-
-        System.out.print("Introduce la duración (segundos): ");
-         duracion = sc.nextDouble();
+               r = pedirTexto("Resolucion: ");
     
-        //Limpiar el buffer después de leer números
-        sc.nextLine(); 
-         v = new Video(titulo, duracion, resolucion);
-        return v;
-    }
+               d = pedirValor("Duracion en segundos: ");
+                 setDuracion(d);
+        
+        }
+         @Override
+        public void reproducir() {
+        System.out.println("Reproduciendo video: "
+                + titulo
+                + " [" + resolucion + " - " + calidad + "]");
+        }
+
+         @Override
+        public void mostrar() {
+        System.out.println("[VIDEO] "
+                + titulo
+                + " | " + resolucion
+                + " | " + duracion + "s");
+        }
 }
  
+
 
 
 
