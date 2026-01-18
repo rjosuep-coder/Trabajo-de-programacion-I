@@ -6,24 +6,17 @@
             this.resolucion = resolucion;
         }
 
-        public void reproducir() {
-            System.out.println("🎬 Proyectando: " + getTitulo() + " (" + resolucion + ")");
-         }
-
-        public void mostrarDetalles() {
-            System.out.println("[VIDEO] " + getTitulo()+ " | "+ resolucion + " | " + getDuracion() + "s");
-        }
         @Override
         public  void  pedirDatos() {
           String t,r;
            int d; 
-              t = pedirTexto("Titulo de la cancion: ");
+             t = pedirTexto("Titulo de la cancion: ");
                 setTitulo(t);
 
-               r = pedirTexto("Resolucion: ");
+             r = pedirTexto("Resolucion: ");
                 resolucion = r;
     
-               d = pedirValor("Duracion en segundos: ");
+             d = pedirValor("Duracion en segundos: ");
                  setDuracion(d);
         
         }
@@ -43,6 +36,7 @@
         }
 }
  
+
 
 
 
