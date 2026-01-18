@@ -22,7 +22,28 @@ public abstratc class ContMulti implements Reproducible {
         this.titulo = titulo;
         this.duracion = duracion;
     }
+
+    public String pedirTexto(String tex){
+        String texto;
+        Scanner tec;
+        tec = new Scanner(System.in);
+        
+        System.out.println(tex);
+        texto = tec.nextLine();
+        return texto;
+    }
+    
+    public int pedirValor(String tex){
+        Scanner tec;
+        tec = new Scanner(System.in);
+        int valor;
+        
+        System.out.println(tex);
+        valor = tec.nextInt();
+        return valor;
+    }
 }
+
 
 
 
