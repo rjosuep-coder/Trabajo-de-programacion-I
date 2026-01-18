@@ -19,7 +19,8 @@ public class Cancion extends ContMulti {
     public void pedirDatos() {
         String t,a;
         int d;
-        Scanner sc = new Scanner(System.in);
+        Scanner tec;
+        tec = new Scanner(System.in);
         
         t = pedirTexto("Titulo de la cancion: ");
         setTitulo(t);
@@ -43,6 +44,7 @@ public class Cancion extends ContMulti {
 }
  
     
+
 
 
 
