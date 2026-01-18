@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparador;
+import java.util.Comparator;
 public class Aplicacion {
          public static void main( String arg[]){
                   Aplicacion ap;
