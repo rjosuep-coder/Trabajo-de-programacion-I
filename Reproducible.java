@@ -1,6 +1,7 @@
 public interface Reproducible {
     void reproducir();
-    void pedir();
+    void pedirDatos();
     void mostrar();
 }
+
 
