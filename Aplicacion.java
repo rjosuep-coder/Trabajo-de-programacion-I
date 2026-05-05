@@ -20,7 +20,7 @@ public class Aplicacion {
          
    public void pedirContenido(ArrayList<ContMulti> playList) {
     Scanner tec;
-    tec = new Scanner(System.in);
+     tec = new Scanner(System.in);
     String opcion;
     
     System.out.println("¿Que contenido deseas agregar? (cancion / podcast / video)");
